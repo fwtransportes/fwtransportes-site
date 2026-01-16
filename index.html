@@ -57,6 +57,25 @@
                         Portal do Cliente
                     </a>
                 </div>
+                 <!-- Botão Mobile (Hambúrguer) - Só aparece em telas pequenas -->
+                <div class="lg:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-blue-900 hover:text-blue-700 focus:outline-none p-2">
+                        <i class="fas fa-bars text-3xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu Mobile (Escondido por padrão) -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 shadow-xl absolute w-full left-0 top-24 z-40">
+            <div class="px-4 pt-4 pb-6 space-y-2 flex flex-col">
+                <a href="#sobre" class="mobile-link block px-4 py-3 text-base font-bold text-gray-700 hover:text-blue-900 hover:bg-blue-50 rounded-lg">A Empresa</a>
+                <a href="#frota" class="mobile-link block px-4 py-3 text-base font-bold text-gray-700 hover:text-blue-900 hover:bg-blue-50 rounded-lg">Frota Premium</a>
+                <a href="#diferenciais" class="mobile-link block px-4 py-3 text-base font-bold text-gray-700 hover:text-blue-900 hover:bg-blue-50 rounded-lg">Tecnologia</a>
+                <a href="#esg" class="mobile-link block px-4 py-3 text-base font-bold text-gray-700 hover:text-blue-900 hover:bg-blue-50 rounded-lg">ESG & Segurança</a>
+                <a href="#contato" class="mobile-link block px-4 py-3 text-base font-bold text-white bg-blue-900 hover:bg-blue-800 rounded-lg text-center mt-4 shadow-md">
+                    Portal do Cliente
+                </a>
             </div>
         </div>
     </nav>
@@ -86,7 +105,7 @@
         </div>
         
         <!-- Scroll Indicator -->
-        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 animate-bounce z-20">
             <i class="fas fa-chevron-down text-3xl text-white/50"></i>
         </div>
     </header>
@@ -365,5 +384,6 @@
 </body>
 
 </html>
+
 
 
