@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FW Transportes | Logística Corporativa Multinacional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Roboto', sans-serif; scroll-behavior: smooth; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; }
+        
+        /* Fundo Hero COM A FOTO DA SUA FROTA REAL (Vans Perfiladas) */
+        .hero-gradient {
+            background: linear-gradient(rgba(5, 20, 40, 0.85), rgba(5, 20, 40, 0.75)), url('IMG-20250618-WA0075.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .bg-navy { background-color: #0A192F; }
+        .section-padding { padding-top: 6rem; padding-bottom: 6rem; }
+        
+        /* Efeitos de Hover */
+        .hover-scale { transition: transform 0.5s ease; }
+        .group:hover .hover-scale { transform: scale(1.05); }
+        
+        /* Sombra suave para destacar elementos */
+        .corporate-shadow { box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.15); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="bg-white/95 backdrop-blur-sm shadow-md fixed w-full z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-24 items-center">
+                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <!-- LOGO REAL DA EMPRESA -->
+                    <img src="FW LOGO.jpeg" alt="FW Transportes Logo" class="h-20 w-auto mr-4 object-contain">
+                </div>
+                <div class="hidden lg:flex space-x-10">
+                    <a href="#sobre" class="text-gray-700 font-semibold hover:text-blue-900 transition text-sm uppercase tracking-wider py-2 border-b-2 border-transparent hover:border-blue-900">A Empresa</a>
+                    <a href="#frota" class="text-gray-700 font-semibold hover:text-blue-900 transition text-sm uppercase tracking-wider py-2 border-b-2 border-transparent hover:border-blue-900">Frota Premium</a>
+                    <a href="#diferenciais" class="text-gray-700 font-semibold hover:text-blue-900 transition text-sm uppercase tracking-wider py-2 border-b-2 border-transparent hover:border-blue-900">Tecnologia</a>
+                    <a href="#esg" class="text-gray-700 font-semibold hover:text-blue-900 transition text-sm uppercase tracking-wider py-2 border-b-2 border-transparent hover:border-blue-900">ESG & Segurança</a>
+                </div>
+                 <div>
+                    <a href="#contato" class="bg-blue-900 text-white px-6 py-3 rounded-md font-bold hover:bg-blue-800 transition shadow-md text-sm uppercase tracking-wider hidden md:inline-block">
+                        Portal do Cliente
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (COM FOTO DA FROTA NO FUNDO) -->
+    <header class="hero-gradient h-screen flex items-center justify-center text-white relative">
+        <div class="max-w-6xl mx-auto px-4 text-center relative z-10 mt-20">
+            <div class="inline-flex items-center bg-blue-800/60 px-6 py-2 rounded-full text-sm font-bold mb-8 tracking-widest border border-blue-400/30 backdrop-blur">
+                <span class="w-3 h-3 bg-green-400 rounded-full mr-3 animate-pulse"></span>
+                LOGÍSTICA CORPORATIVA NÍVEL NACIONAL
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-8 leading-none drop-shadow-2xl">
+                Mobilidade Estratégica para<br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-white to-blue-300">Operações Críticas</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-12 text-gray-300 max-w-4xl mx-auto font-light leading-relaxed">
+                Parceiro homologado de grandes corporações. Entregamos segurança jurídica, compliance trabalhista e gestão de frotas baseada em telemetria avançada.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-6">
+                <a href="#frota" class="bg-white text-blue-900 px-10 py-5 rounded-lg font-bold hover:bg-gray-50 transition corporate-shadow hover:-translate-y-1 text-lg">
+                    Conhecer Estrutura
+                </a>
+                <a href="#contato" class="border-2 border-white/30 text-white px-10 py-5 rounded-lg font-bold hover:bg-white/10 transition backdrop-blur-sm text-lg">
+                    Falar com Diretoria
+                </a>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-3xl text-white/50"></i>
+        </div>
+    </header>
+
+    <!-- Stats Banner -->
+    <div class="bg-white relative z-20 -mt-2 corporate-shadow py-16">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-gray-200">
+            <div class="p-4">
+                <div class="text-5xl font-extrabold text-blue-900 counter mb-2">10+</div>
+                <div class="text-xs uppercase tracking-widest text-gray-500 font-bold">Anos de Excelência</div>
+            </div>
+            <div class="p-4">
+                <div class="text-5xl font-extrabold text-blue-900 mb-2">100%</div>
+                <div class="text-xs uppercase tracking-widest text-gray-500 font-bold">Compliance Legal</div>
+            </div>
+             <div class="p-4">
+                <div class="text-5xl font-extrabold text-blue-900 mb-2"><i class="fas fa-check-double text-green-500"></i></div>
+                <div class="text-xs uppercase tracking-widest text-gray-500 font-bold">Homologação G-Certifica</div>
+            </div>
+            <div class="p-4">
+                <div class="text-5xl font-extrabold text-blue-900 mb-2">24/7</div>
+                <div class="text-xs uppercase tracking-widest text-gray-500 font-bold">Centro de Controle</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sobre & Sede -->
+    <section id="sobre" class="section-padding bg-gray-50 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-20 items-center">
+            <div class="relative group">
+                <div class="absolute top-0 left-0 w-64 h-64 bg-blue-100/50 -translate-x-12 -translate-y-12 rounded-full z-0 filter blur-3xl opacity-70 transition-all group-hover:bg-blue-200/50"></div>
+                <div class="absolute bottom-0 right-0 w-64 h-64 bg-gray-200/50 translate-x-12 translate-y-12 rounded-full z-0 filter blur-3xl opacity-70 transition-all group-hover:bg-gray-300/50"></div>
+                
+                <img src="Sede Fw.PNG" 
+                     onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';"
+                     alt="Base Operacional FW Transportes" 
+                     class="relative z-10 rounded-2xl shadow-2xl w-full object-cover h-[500px] transform transition duration-700 hover:scale-[1.02] border-4 border-white">
+                
+                <div class="absolute -bottom-6 -right-6 bg-blue-900 text-white p-8 rounded-xl shadow-2xl z-20 max-w-xs">
+                    <p class="font-bold text-xl mb-2">Hub Logístico Próprio</p>
+                    <p class="text-blue-200 text-sm leading-relaxed">Itumbiara-GO: Estrutura centralizada para manutenção e controle de frota nacional.</p>
+                </div>
+            </div>
+            
+            <div class="pl-0 md:pl-10">
+                <h4 class="text-blue-900 font-bold uppercase tracking-widest mb-4 text-sm flex items-center">
+                    <span class="w-8 h-[2px] bg-blue-900 mr-4"></span> Perfil Corporativo
+                </h4>
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-8 text-gray-900 leading-tight">Robustez Operacional para <br><span class="text-blue-800">Demandas Complexas</span></h2>
+                <p class="text-xl text-gray-600 mb-8 leading-relaxed text-justify font-light">
+                    A FW Transportes não é apenas uma fornecedora de veículos; somos o braço logístico de nossos clientes. Consolidada como parceira estratégica de gigantes como <strong>Way Brasil 262, EPR Triângulo e Triunfo Concebra</strong>, oferecemos uma gestão de mobilidade auditável e baseada em dados.
+                </p>
+                
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center text-blue-800 shadow-sm">
+                            <i class="fas fa-shield-alt text-xl"></i>
+                        </div>
+                        <div class="ml-6">
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">Segurança Jurídica & Compliance</h4>
+                            <p class="text-gray-600">Processos alinhados com G-Certifica, eliminando passivos trabalhistas para o contratante.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center text-blue-800 shadow-sm">
+                            <i class="fas fa-satellite-dish text-xl"></i>
+                        </div>
+                        <div class="ml-6">
+                            <h4 class="text-xl font-bold text-gray-900 mb-2">Gestão de Risco Ativa</h4>
+                            <p class="text-gray-600">Telemetria Cobli para monitoramento de conduta e manutenção preditiva em tempo real.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Frota Section -->
+    <section id="frota" class="section-padding bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-20 max-w-4xl mx-auto">
+                 <h4 class="text-blue-900 font-bold uppercase tracking-widest mb-4 text-sm">Nossa Capacidade</h4>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">Frota Premium & Versátil</h2>
+                <p class="text-xl text-gray-600 leading-relaxed">
+                    Dispomos desde <strong>vans executivas</strong> para transporte coletivo até <strong>veículos leves (Polos)</strong> para inspeções e apoio logístico rápido. Toda frota monitorada e com manutenção preventiva rigorosa.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-10 mb-16">
+                
+                <!-- Card 1: FOTO REAL DA VAN -->
+                <div class="group bg-gray-50 rounded-3xl overflow-hidden corporate-shadow hover:shadow-2xl transition duration-500 relative">
+                    <div class="relative h-96 overflow-hidden">
+                        <div class="absolute inset-0 bg-blue-900/20 z-10 group-hover:bg-blue-900/0 transition duration-500"></div>
+                        <img src="IMG-20250618-WA0075.jpg" 
+                             onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1570125909232-eb263c188f7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80';"
+                             class="w-full h-full object-cover hover-scale transform scale-100 transition duration-1000" alt="Vans Executivas FW Real">
+                         <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-8 z-20">
+                             <h3 class="text-3xl font-bold text-white mb-2">Vans Executivas</h3>
+                             <p class="text-gray-200 font-medium">Conforto e Segurança para Equipes</p>
+                         </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: FOTO REAL DA FROTA PERFILADA -->
+                <div class="group bg-gray-50 rounded-3xl overflow-hidden corporate-shadow hover:shadow-2xl transition duration-500 relative">
+                    <div class="relative h-96 overflow-hidden">
+                        <div class="absolute inset-0 bg-blue-900/20 z-10 group-hover:bg-blue-900/0 transition duration-500"></div>
+                        <!-- Atualizado para usar especificamente o arquivo JPEG se disponível, ou fallback para JPG -->
+                        <img src="IMG-20250829-WA0060.jpeg" 
+                             onerror="this.onerror=null; this.src='IMG-20250829-WA0060.jpg';"
+                             class="w-full h-full object-cover hover-scale transform scale-100 transition duration-1000" alt="Frota Completa FW Real">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-8 z-20">
+                             <h3 class="text-3xl font-bold text-white mb-2">Capacidade de Mobilização</h3>
+                             <p class="text-gray-200 font-medium">Estrutura para Grandes Contratos</p>
+                         </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Galeria de Veículos Leves e Apoio (REDUZIDO PARA 3 IMAGENS COM O DESTAQUE DO POLO) -->
+            <div class="text-center mb-10">
+                <h3 class="text-2xl font-bold text-gray-900">Veículos Leves & Suporte Operacional</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                 
+                 <!-- FOTO 1: DESTAQUE SPIN (IMG-20250829-WA0057.jpg) -->
+                 <div class="h-64 overflow-hidden rounded-2xl corporate-shadow cursor-pointer group relative">
+                    <img src="IMG-20250829-WA0057.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';" class="w-full h-full object-cover hover-scale" alt="Veículo Destaque Spin">
+                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <span class="text-white font-bold uppercase tracking-wider text-sm">Veículos com 7 Lugares</span>
+                    </div>
+                </div>
+
+                 <!-- FOTO 2: POLO REAL (WA0058) -->
+                 <div class="h-64 overflow-hidden rounded-2xl corporate-shadow cursor-pointer group relative">
+                    <img src="IMG-20250829-WA0058.jpeg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';" class="w-full h-full object-cover hover-scale" alt="Veículo Polo FW">
+                     <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <span class="text-white font-bold uppercase tracking-wider text-sm">Frota Leve</span>
+                    </div>
+                </div>
+
+                 <!-- FOTO 3: APOIO REAL (WA0059) -->
+                 <div class="h-64 overflow-hidden rounded-2xl corporate-shadow cursor-pointer group relative">
+                    <img src="IMG-20250829-WA0055.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1632823471460-e8b4cb465547?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';" class="w-full h-full object-cover hover-scale" alt="Apoio Operacional">
+                     <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <span class="text-white font-bold uppercase tracking-wider text-sm">Apoio Operacional</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ESG & Treinamentos -->
+    <section id="esg" class="section-padding bg-blue-950 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5" style="background-image: url('data:image/svg+xml,%3Csvg width=\'100\' height=\'100\' viewBox=\'0 0 100 100\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zM32 63c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm57-13c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z\' fill=\'%23ffffff\' fill-rule=\'nonzero\'/%3E%3C/svg%3E');"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                <div class="lg:w-2/5">
+                    <div class="inline-block bg-yellow-500 text-blue-950 font-extrabold px-4 py-1 rounded-sm mb-6 text-xs uppercase tracking-widest">Pilar Social & Segurança (ESG)</div>
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-8 leading-tight">Investimento Humano:<br>A Diferença FW</h2>
+                    <p class="text-blue-100 text-xl mb-8 leading-relaxed font-light">
+                        Para Grandes Empresas, o maior risco não é o veículo, é o condutor. Por isso, nossa cultura de segurança é inegociável e nossos treinamentos são constantes.
+                    </p>
+                    
+                    <ul class="space-y-5">
+                        <li class="flex items-center p-4 bg-blue-900/50 rounded-xl border border-blue-800/50">
+                            <i class="fas fa-shield-alt text-yellow-400 text-2xl mr-6"></i>
+                            <span class="text-lg font-medium">Direção Defensiva e Evasiva</span>
+                        </li>
+                        <li class="flex items-center p-4 bg-blue-900/50 rounded-xl border border-blue-800/50">
+                            <i class="fas fa-file-medical-alt text-yellow-400 text-2xl mr-6"></i>
+                            <span class="text-lg font-medium">Primeiros Socorros e NR's Vigentes</span>
+                        </li>
+                         <li class="flex items-center p-4 bg-blue-900/50 rounded-xl border border-blue-800/50">
+                            <i class="fas fa-users-cog text-yellow-400 text-2xl mr-6"></i>
+                            <span class="text-lg font-medium">Integração e Reciclagem</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="lg:w-3/5 grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="space-y-2 text-center group">
+                        <div class="h-80 rounded-2xl overflow-hidden border-4 border-blue-800/30 shadow-2xl relative">
+                             <div class="absolute inset-0 bg-blue-900/20 z-10 group-hover:bg-blue-900/0 transition"></div>
+                            <img src="Treinamento Wesley.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80';" class="w-full h-full object-cover hover-scale">
+                        </div>
+                        <p class="text-sm font-bold tracking-wider text-blue-200">CAPACITAÇÃO TÉCNICA</p>
+                    </div>
+                    
+                    <div class="space-y-2 text-center group md:-translate-y-8">
+                        <div class="h-80 rounded-2xl overflow-hidden border-4 border-blue-800/30 shadow-2xl relative">
+                            <div class="absolute inset-0 bg-blue-900/20 z-10 group-hover:bg-blue-900/0 transition"></div>
+                            <img src="IMG-20250829-WA0061.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80';" class="w-full h-full object-cover hover-scale">
+                        </div>
+                         <p class="text-sm font-bold tracking-wider text-blue-200">GESTÃO DE EQUIPES</p>
+                    </div>
+                    
+                     <div class="space-y-2 text-center group">
+                        <div class="h-80 rounded-2xl overflow-hidden border-4 border-blue-800/30 shadow-2xl relative">
+                            <div class="absolute inset-0 bg-blue-900/20 z-10 group-hover:bg-blue-900/0 transition"></div>
+                            <img src="IMG-20250829-WA0059.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80';" class="w-full h-full object-cover hover-scale">
+                        </div>
+                         <p class="text-sm font-bold tracking-wider text-blue-200">SEGURANÇA DO TRABALHO</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted By -->
+    <section class="py-16 bg-gray-100 border-y border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-gray-500 font-bold uppercase tracking-widest mb-12 text-sm">Parceiro Estratégico de Grandes Operações</p>
+            <div class="flex flex-wrap justify-center items-center gap-16 grayscale opacity-60 hover:opacity-100 transition duration-500">
+                <span class="text-3xl font-extrabold text-gray-800">WAY BRASIL</span>
+                <span class="text-3xl font-extrabold text-gray-800">EPR TRIÂNGULO</span>
+                <span class="text-3xl font-extrabold text-gray-800">BP BIOENERGY</span>
+                <span class="text-3xl font-extrabold text-gray-800">TRIUNFO CONCEBRA</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section id="contato" class="section-padding bg-white">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="bg-blue-900 rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row relative z-10">
+                <div class="p-12 md:w-3/5 text-white relative overflow-hidden">
+                     <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+                    <h3 class="text-3xl md:text-4xl font-extrabold mb-6 relative z-10">Sua operação exige um parceiro deste nível.</h3>
+                    <p class="text-blue-200 mb-10 text-lg relative z-10 leading-relaxed">
+                        Não arrisque sua conformidade. Fale com nossa diretoria comercial e desenharemos um plano de mobilidade sob medida para sua empresa.
+                    </p>
+                    
+                    <div class="space-y-6 relative z-10 font-medium">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-blue-800/50 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-map-marker-alt text-yellow-400 text-xl"></i>
+                            </div>
+                            <span>Rua Itarumã, 632, Bairro Planalto - Itumbiara/GO</span>
+                        </div>
+                        <div class="flex items-center">
+                             <div class="w-12 h-12 bg-blue-800/50 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-phone-alt text-yellow-400 text-xl"></i>
+                            </div>
+                            <span>(64) 3404-1962 | (64) 98120-1234</span>
+                        </div>
+                        <div class="flex items-center">
+                             <div class="w-12 h-12 bg-blue-800/50 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope text-yellow-400 text-xl"></i>
+                            </div>
+                            <a href="mailto:edmar@fwtransportes.net.br" class="hover:text-yellow-400 transition">edmar@fwtransportes.net.br</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-12 md:w-2/5 bg-white flex flex-col justify-center items-center text-center relative">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-900 to-blue-500 md:hidden"></div>
+                    <div class="absolute left-0 top-0 h-full w-2 bg-gradient-to-b from-blue-900 to-blue-500 hidden md:block"></div>
+                    <i class="fab fa-whatsapp text-7xl text-green-500 mb-6 filter drop-shadow-lg"></i>
+                    <h4 class="font-extrabold text-2xl text-gray-900 mb-3">Canal Direto</h4>
+                    <p class="text-gray-600 mb-8 leading-relaxed">Resposta imediata para cotações e agendamentos técnicos.</p>
+                    <a href="https://wa.me/5564981201234" target="_blank" class="bg-green-500 text-white font-extrabold py-4 px-10 rounded-full hover:bg-green-600 transition w-full shadow-xl hover:shadow-2xl transform hover:-translate-y-1 text-lg flex items-center justify-center">
+                        <i class="fab fa-whatsapp mr-3 text-2xl"></i> Iniciar Conversa
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-12 text-gray-500 text-sm font-medium uppercase tracking-widest">
+            FW TRANSPORTES E LOGÍSTICA LTDA • CNPJ: 24.608.642/0001-36 • Itumbiara - Goiás
+        </div>
+    </section>
+
+</body>
+</html>
