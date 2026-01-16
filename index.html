@@ -16,7 +16,13 @@
             background: linear-gradient(rgba(5, 20, 40, 0.85), rgba(5, 20, 40, 0.75)), url('IMG-20250618-WA0075.jpg');
             background-size: cover;
             background-position: center;
-            background-attachment: fixed;
+           background-attachment: scroll;
+        }
+         
+        @media (min-width: 1024px) {
+            .hero-gradient {
+                background-attachment: fixed;
+            }
         }
         
         .bg-navy { background-color: #0A192F; }
@@ -359,4 +365,5 @@
 </body>
 
 </html>
+
 
